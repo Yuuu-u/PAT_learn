@@ -1,13 +1,19 @@
 ## Welcome to PAT analyse
 
-You can use the [editor on GitHub](https://github.com/anner0/PAT_learn/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 1037
+输入格式：
 
-### Markdown
+输入在 1 行中分别给出 P 和 A，格式为 Galleon.Sickle.Knut，其间用 1 个空格分隔。这里 Galleon 是 [0, 10
+^7] 区间内的整数，Sickle 是 [0, 17) 区间内的整数，Knut 是 [0, 29) 区间内的整数。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+输出格式：
+在一行中用与输入同样的格式输出哈利应该被找的零钱。如果他没带够钱，那么输出的应该是负数。
 
+输入样例1：
+10.16.27 14.1.28
+输出样例1：
+3.2.1
 ```markdown
 Syntax highlighted code block
 
