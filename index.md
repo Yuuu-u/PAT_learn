@@ -15,28 +15,40 @@
 输出样例1：
 3.2.1
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#include<stdio.h>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+int main(){
+	int a1,a2,a3,b1,b2,b3,c1,c2,c3;
+	int sum1,sum2,sum3;
+	scanf("%d.%d.%d",&a1,&b1,&c1);
+	scanf("%d.%d.%d",&a2,&b2,&c2);
+	sum1 = a1 * 17 * 29 + b1 * 29 + c1;
+	sum2 = a2 * 17 *29 + b2 * 29 + c2;
+	sum3 = sum2 - sum1; 
+	if(sum3 < 0){
+		sum3 = - sum3;
+		printf("-");
+	}
+	a3 = sum3 / (17 * 29);
+	b3 = sum3 % (17 * 29) /29;
+	c3 = sum3 % (17 * 29) % 29;
+	printf("%d.%d.%d",a3,b3,c3);
+	return 0;
+}
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### 解析
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anner0/PAT_learn/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+类似于单位换算，先将其换位最小单位，
+即sum1 = a1 * 17 * 29 + b1 * 29 + c1;
+	sum2 = a2 * 17 *29 + b2 * 29 + c2;
+然后就进行判断，最后再将其换位最小单位。
+可注意点：此方法中未将‘.’按照字符来输入，而是直接带过，则省事。
 
 ### Support or Contact
 
